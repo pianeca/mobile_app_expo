@@ -8,25 +8,29 @@
     "scheme": "taskexpo",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+
     "ios": {
       "supportsTablet": true
     },
+
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
-      },
+      "package": "com.pianeca_99.taskexpo",
+      "permissions": ["INTERNET"],
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.pianeca_99.taskexpo"
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundColor": "#E6F4FE",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      }
     },
+
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png",
       "bundler": "metro"
     },
+
     "plugins": [
       "expo-router",
       [
@@ -42,9 +46,19 @@
         }
       ]
     ],
+
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+
+    "extra": {
+      "router": {},
+      "supabaseUrl": "https://zwpfltznbneewchwisfe.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3cGZsdHpuYm5lZXdjaHdpc2ZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgzNTgyNzQsImV4cCI6MjA4MzkzNDI3NH0.-1_Akc8EtRn52Hx6TLZ98H7ugcIYH1HZ8nClG81Jt2g",
+      "eas": {
+        "projectId": "ecf842f3-1485-4ba3-85a9-43f84ef62036"
+      }
     }
   }
 }
